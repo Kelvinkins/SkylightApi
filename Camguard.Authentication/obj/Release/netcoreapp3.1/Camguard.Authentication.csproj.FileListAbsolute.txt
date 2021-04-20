@@ -1,0 +1,12 @@
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\bin\Release\netcoreapp3.1\Camguard.Authentication.deps.json
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\bin\Release\netcoreapp3.1\Camguard.Authentication.dll
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\bin\Release\netcoreapp3.1\Camguard.Authentication.pdb
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\obj\Release\netcoreapp3.1\Camguard.Authentication.csprojAssemblyReference.cache
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\obj\Release\netcoreapp3.1\Camguard.Authentication.AssemblyInfoInputs.cache
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\obj\Release\netcoreapp3.1\Camguard.Authentication.AssemblyInfo.cs
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\obj\Release\netcoreapp3.1\Camguard.Authentication.csproj.CoreCompileInputs.cache
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\obj\Release\netcoreapp3.1\Camguard.Authentication.dll
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\obj\Release\netcoreapp3.1\Camguard.Authentication.pdb
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\bin\Release\netcoreapp3.1\Camguard.Data.dll
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\bin\Release\netcoreapp3.1\Camguard.Data.pdb
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Authentication\obj\Release\netcoreapp3.1\Camguard.Authentication.csproj.CopyComplete

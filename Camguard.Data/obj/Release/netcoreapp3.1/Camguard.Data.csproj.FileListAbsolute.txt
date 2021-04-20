@@ -1,0 +1,9 @@
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Data\bin\Release\netcoreapp3.1\Camguard.Data.deps.json
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Data\bin\Release\netcoreapp3.1\Camguard.Data.dll
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Data\bin\Release\netcoreapp3.1\Camguard.Data.pdb
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Data\obj\Release\netcoreapp3.1\Camguard.Data.csprojAssemblyReference.cache
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Data\obj\Release\netcoreapp3.1\Camguard.Data.AssemblyInfoInputs.cache
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Data\obj\Release\netcoreapp3.1\Camguard.Data.AssemblyInfo.cs
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Data\obj\Release\netcoreapp3.1\Camguard.Data.csproj.CoreCompileInputs.cache
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Data\obj\Release\netcoreapp3.1\Camguard.Data.dll
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Data\obj\Release\netcoreapp3.1\Camguard.Data.pdb

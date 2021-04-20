@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Controllers.PassportController.Trails(System.Int32,System.Int32)">
+            <summary>
+            returns a list of login audit trails
+            </summary>
+            <param name="limit">limit</param>
+            <param name="offset"> offset</param>
+            <returns> returns a list of AuditTrail Object</returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.LoginAsync(Api.Authentication.ViewModel.LoginViewModel)">
+            <summary>
+            Logs in the user and generates access token, if the user does not exist and has been validated on the
+            active directory, creates the user and continue witht the login process.
+            </summary>
+            <param name="model">The user to login</param>
+            <returns>returns access token if the login succeeds or Unthorized if the login fails</returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.Register(Api.Authentication.ViewModel.RegisterViewModel)">
+            <summary>
+            Registers the user
+            </summary>
+            <param name="model">The user to register</param>
+            <returns>returns status and message</returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.BulkRegistration(System.Collections.Generic.List{Api.Authentication.ViewModel.RegisterViewModel})">
+            <summary>
+            Bulk registration
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.ChangePassword(System.String,System.String)">
+            <summary>
+            Changes user password
+            </summary>
+            <param name="currentPassword">The existing password</param>
+            <param name="newPassword">The new password</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.AddUserToRole(Api.Authentication.ViewModel.UserRoleViewModel)">
+            <summary>
+            Adds user to an existing role, if the role does not exist, creates it on fly
+            </summary>
+            <param name="model">The user ID and the Role to add the user to</param>
+            <returns>returns status and message</returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.AddRole(System.String)">
+            <summary>
+            Adds a new role to the Database
+            </summary>
+            <param name="role">The role to add</param>
+            <returns>returns http status code</returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.GetUserAsync(System.String,System.Int32,System.Int32)">
+            <summary>
+            returns a list of users
+            </summary>
+            <param name="limit">limit of the record</param>
+            <param name="offset">offset of the record</param>
+            <param name="keyword">search term for searching for a user</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.UpdateUser(Api.Authentication.ViewModel.UserViewModel)">
+            <summary>
+            Updates the user's State, SolID, Username and Role
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.Roles">
+            <summary>
+            Gets the List of roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ServiceController.RunAsync">
+            <summary>
+            Runs various services and reports the status and log to the database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ServiceController.GetServiceLog(System.String,System.Nullable{System.DateTime},System.Nullable{Skylight.Models.Enums.ServiceStatus})">
+            <summary>
+            Gets service logs
+            </summary>
+            <param name="name">Name of the service</param>
+            <param name="date">date of the service</param>
+            <param name="status">Status service</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Controllers.FootagesController.Get(System.Int32,System.Int32,System.DateTime,System.String,System.String)">
+            <summary>
+            Gets footages
+            </summary>
+            <param name="Date">The date of th transaction</param>
+            <param name="TerminalID">The terminal ID of the Terminal</param>
+            <param name="Pan">The Pan number of the transaction</param>
+            <param name="limit">limit of the record</param>
+            <param name="offset">offset of the record</param>
+            <returns>returns a list of footages</returns>
+        </member>
+        <member name="M:Api.Controllers.JournalsController.Get(System.DateTime,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Journal endpoint
+            </summary>
+            <param name="Date">Transaction date</param>
+            <param name="TerminalID">Terminal ID</param>
+            <param name="Sqn">Sequence Number</param>
+            <param name="Pan">Pan Number</param>
+            <param name="AccountNo">Account Number</param>
+            <param name="Rrn">RRN</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.Trails(System.Int32,System.Int32)">
+            <summary>
+            returns a list of login audit trails
+            </summary>
+            <param name="limit">limit</param>
+            <param name="offset"> offset</param>
+            <returns> returns a list of AuditTrail Object</returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.LoginAsync(Api.Authentication.ViewModel.LoginViewModel)">
+            <summary>
+            Logs in the user and generates access token, if the user does not exist and has been validated on the
+            active directory, creates the user and continue witht the login process.
+            </summary>
+            <param name="model">The user to login</param>
+            <returns>returns access token if the login succeeds or Unthorized if the login fails</returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.RegisterOnFly(Api.Authentication.ViewModel.LoginViewModel)">
+            <summary>
+            RegisterOnFly for internal user only
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.Register(Api.Authentication.ViewModel.RegisterViewModel)">
+            <summary>
+            Registers the user
+            </summary>
+            <param name="model">The user to register</param>
+            <returns>returns status and message</returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.BulkRegistration(System.Collections.Generic.List{Api.Authentication.ViewModel.RegisterViewModel})">
+            <summary>
+            Bulk registration
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.ChangePassword(System.String,System.String)">
+            <summary>
+            Changes user password
+            </summary>
+            <param name="currentPassword">The existing password</param>
+            <param name="newPassword">The new password</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.AddUserToRole(Api.Authentication.ViewModel.UserRoleViewModel)">
+            <summary>
+            Adds user to an existing role, if the role does not exist, creates it on fly
+            </summary>
+            <param name="model">The user ID and the Role to add the user to</param>
+            <returns>returns status and message</returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.AddRole(System.String)">
+            <summary>
+            Adds a new role to the Database
+            </summary>
+            <param name="role">The role to add</param>
+            <returns>returns http status code</returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.GetUserAsync(System.String,System.Int32,System.Int32)">
+            <summary>
+            returns a list of users
+            </summary>
+            <param name="limit">limit of the record</param>
+            <param name="offset">offset of the record</param>
+            <param name="searchTerm">search term for searching for a user</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.UpdateUser(Api.Authentication.ViewModel.UserViewModel)">
+            <summary>
+            Updates the user's State, SolID, Username and Role
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PassportController.Roles">
+            <summary>
+            Gets the List of roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ServiceController.RunAsync">
+            <summary>
+            Runs various services and reports the status and log to the database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ServiceController.GetServiceLog(System.String,System.Nullable{System.DateTime},System.Nullable{Camguard.Data.Model.Enum.ServiceStatus})">
+            <summary>
+            Gets service logs
+            </summary>
+            <param name="name">Name of the service</param>
+            <param name="date">date of the service</param>
+            <param name="status">Status service</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.StatisticsController.GetBalance(System.String)">
+            <summary>
+            Gets balance from the specified atm and Finacle
+            </summary>
+            <param name="TerminalID">The terminal ID of the ATM</param>
+            <returns>returns a CashReconciliationViewModel object</returns>
+        </member>
+        <member name="M:Api.Controllers.StatisticsController.GetCash(System.Int32,System.Int32)">
+            <summary>
+            Gets cash evacuated
+            </summary>
+            <param name="limit">limit of the record to retrieve</param>
+            <param name="offset">offset of the record to retrieve</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.StatisticsController.GetFinacleBalance(System.String)">
+            <summary>
+            Get finacle balance given the TerminalID
+            </summary>
+            <param name="TerminalID">The terminal ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.StatisticsController.Update(Camguard.ViewModel.CashEvacuatedViewModel)">
+            <summary>
+            Updates cash evacauted
+            </summary>
+            <param name="model"> that cash evacuated to update</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.Get(System.Int32,System.Int32,System.Nullable{Camguard.Data.Model.Enum.AtmStatus})">
+            <summary>
+             Gets list of atms depending on the supplied status
+            </summary>
+            <param name="limit">This is the number of item retrieved per page</param>
+            <param name="offset">this is the offset of the records</param>
+            <param name="status">Connected =1, Disconnected=0, null returns all</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.Search(System.String)">
+            <summary>
+            Search atm list using the supplied parameter
+            </summary>
+            <param name="searchTerm">this parameter can be either TerminalId or SolID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.FaultyCamera(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String)">
+            <summary>
+            Gets Camera Faulty
+            </summary>
+            <param name="dateFrom"></param>
+            <param name="dateTo"></param>
+            <param name="region"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.DarkImage(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String)">
+            <summary>
+            Gets Dark image
+            </summary>
+            <param name="dateFrom"></param>
+            <param name="dateTo"></param>
+            <param name="region"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.DarkImageCount">
+            <summary>
+            Gets the count of Dark Image
+            </summary>
+            <returns>returns the count of dark image</returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.FaultyCameraCount">
+            <summary>
+            Gets the count of faulty cameras
+            </summary>
+            <returns>returns the count of faulty cameras</returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.GetAciveTerminals(System.Int32,System.Int32)">
+            <summary>
+            Returns a list of terminalIDs that are actively appearing on authNum
+            </summary>
+            <param name="limit">This is the number of item retrieved per page</param>
+            <param name="offset">this is the offset of the records</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.Count(System.Nullable{Camguard.Data.Model.Enum.AtmStatus})">
+            <summary>
+            Get counts of atm depending on the supplied status parameter
+            </summary>
+            <param name="status">Connected =1, Disconnected=0, null returns zero</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.Update(Camguard.Data.Model.AtmModel)">
+            <summary>
+            Updates the Atm
+            </summary>
+            <param name="model">the atm model that needs updating</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.AddAsync(Camguard.Data.Model.AtmModel)">
+            <summary>
+            this endpoint is for adding single atm
+            </summary>
+            <param name="model">a single atm model</param>
+            <returns>returns a boolean status with message.</returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.AddBulkAsync(System.Collections.Generic.List{Camguard.Data.Model.AtmModel})">
+            <summary>
+            This endpoint is for bulk upload of atms
+            </summary>
+            <param name="model">list of atm model</param>
+            <returns>returns a boolean status with message.</returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.AddCustodianAsync(System.String,System.String)">
+            <summary>
+            Adds Custodian to a terminal
+            </summary>
+            <param name="TerminalId">Terminal Id of the Terminal to add the custodian to</param>
+            <param name="Custodian">The custodian to add to a terminal</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.GetStates">
+            <summary>
+            Retrieves a list of state from the AtmModel table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camguard.Api.Controllers.AtmsController.GetBrands">
+            <summary>
+            Gets atm brands
+            </summary>
+            <returns>returns atm brand list</returns>
+        </member>
+        <member name="M:CamguardWebApi.Controllers.ExceptionsController.Overages(System.Int32,System.Int32)">
+            <summary>
+            Gets overages/Dispense Error
+            </summary>
+            <param name="limit">This is the number of item retrieved per page</param>
+            <param name="offset">this is the offset of the records</param>
+            <returns></returns>
+        </member>
+        <member name="M:CamguardWebApi.Controllers.ExceptionsController.Shortages(System.Int32,System.Int32)">
+            <summary>
+            Gets shortages/Un-impacted
+            </summary>
+            <param name="limit">This is the number of item retrieved per page</param>
+            <param name="offset"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CamguardWebApi.Controllers.ExceptionsController.SkippedTransactions(System.Int32,System.Int32)">
+            <summary>
+            Retrieves skipped transactions where IsChecked==true
+            </summary>
+            <param name="limit">This is the number of item retrieved per page</param>
+            <param name="offset">this is the offset of the records</param>
+            <returns>returns a list of SkippedTransactions</returns>
+        </member>
+        <member name="M:CamguardWebApi.Controllers.ExceptionsController.Accept(System.Collections.Generic.List{Camguard.Data.Model.AuthNumModel})">
+            <summary>
+            Accepts the transaction and changes isPending to true
+            </summary>
+            <param name="transactions">The transaction data</param>
+            <returns>returns http status code</returns>
+        </member>
+        <member name="M:CamguardWebApi.Controllers.ExceptionsController.Decline(System.Collections.Generic.List{Camguard.Data.Model.AuthNumModel})">
+            <summary>
+            Declines the transaction and changes isPending to false
+            </summary>
+            <param name="transactions">The transaction data</param>
+            <returns>returns http status code</returns>
+        </member>
+        <member name="M:CamguardWebApi.Controllers.ExceptionsController.Count(Camguard.Data.Model.Enum.ExceptionType)">
+            <summary>
+            Returns the count of the given exception e.g overages and footages
+            </summary>
+            <param name="type"></param>
+            <returns>returns the count</returns>
+        </member>
+        <member name="M:CamguardWebApi.Controllers.ExceptionsController.Report(System.Nullable{Camguard.Data.Model.Enum.ExceptionType},System.Nullable{Camguard.Data.Model.Enum.Issuer},System.DateTime,System.DateTime,System.String)">
+            <summary>
+            Returns a report using the supplied parameters
+            </summary>
+            <param name="type">This is the exception type    Overages=1, Shortages=2, ClosedReversal=3, CloseUnImpacted=4</param>
+            <param name="issuer">This is the issuer  NotOnUs = 0, OnUs = 1,</param>
+            <param name="dateFrom">The date from</param>
+            <param name="dateTo"> the date to</param>
+            <param name="terminalID">The TerminalID</param>
+            <returns>Returns the report</returns>
+        </member>
+        <member name="M:CamguardWebApi.Controllers.ExceptionsController.GetTranInvestigation(System.DateTime,System.String)">
+            <summary>
+            Returns transaction by Date and Account Number
+            </summary>
+            <param name="date">The transaction date</param>
+            <param name="AccountNum">The Account Number</param>
+            <returns></returns>
+        </member>
+        <member name="M:CamguardWebApi.Controllers.ExceptionsController.SkippedTransactionReport(System.Nullable{Camguard.Data.Model.Enum.Issuer},System.DateTime,System.DateTime,System.String)">
+            <summary>
+            SkippedTransactionReport
+            </summary>
+            <param name="issuer">Issuer</param>
+            <param name="dateFrom">Date from</param>
+            <param name="dateTo">Date to</param>
+            <param name="terminalID">The terminal ID</param>
+            <returns>returns a list skipped transactions</returns>
+        </member>
+    </members>
+</doc>

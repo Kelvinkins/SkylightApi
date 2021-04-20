@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Extensions\MapperExtensions.cs" />
+    <Compile Include="IContract\ICapitationService.cs" />
+    <Compile Include="IContract\ICompanyPolicyService.cs" />
+    <Compile Include="IContract\ICompanyService.cs" />
+    <Compile Include="IContract\IDependantService.cs" />
+    <Compile Include="IContract\IEmailService.cs" />
+    <Compile Include="IContract\IEmployeeService.cs" />
+    <Compile Include="IContract\IFileService.cs" />
+    <Compile Include="IContract\IMapper.cs" />
+    <Compile Include="IContract\IOperationService.cs" />
+    <Compile Include="IContract\IPolicyService.cs" />
+    <Compile Include="IContract\IProviderService.cs" />
+    <Compile Include="IContract\IWebHookService.cs" />
+    <Compile Include="Mapping\Mapper.cs" />
+    <Compile Include="Service\CapitationService.cs" />
+    <Compile Include="Service\CompanyPolicyService.cs" />
+    <Compile Include="Service\CompanyService.cs" />
+    <Compile Include="Service\DependantService.cs" />
+    <Compile Include="Service\EmailService.cs" />
+    <Compile Include="Service\EmployeeService.cs" />
+    <Compile Include="Service\FileService.cs" />
+    <Compile Include="Service\OperationService.cs" />
+    <Compile Include="Service\PolicyService.cs" />
+    <Compile Include="Service\ProviderService.cs" />
+    <Compile Include="Service\WebHookService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helper\" />
+    <Folder Include="Tools\" />
+    <Folder Include="Providers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ArrayToPdf" Version="1.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Camguard.Data\Skylight.Data.csproj" />
+    <ProjectReference Include="..\Camguard.Externals\Camguard.Externals.csproj" />
+  </ItemGroup>
+
+</Project>

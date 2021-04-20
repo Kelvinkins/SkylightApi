@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\License.cs" />
+    <Compile Include="Common\StaticQueries.cs" />
+    <Compile Include="Common\StoredProcedures.cs" />
+    <Compile Include="DAL\SkylightRepository.cs" />
+    <Compile Include="DAL\UnitOfWork.cs" />
+    <Compile Include="DataContext\SkyDbContext.cs" />
+    <Compile Include="Models\AppointmentModels.cs" />
+    <Compile Include="Models\AuthItem.cs" />
+    <Compile Include="Models\Authorization.cs" />
+    <Compile Include="Models\AuthorizationDetail.cs" />
+    <Compile Include="Models\AuthorizationDiagno.cs" />
+    <Compile Include="Models\BenefitCategory.cs" />
+    <Compile Include="Models\BenefitCover.cs" />
+    <Compile Include="Models\Capitation.cs" />
+    <Compile Include="Models\CapitatonMaster.cs" />
+    <Compile Include="Models\Claim.cs" />
+    <Compile Include="Models\ClaimBatch.cs" />
+    <Compile Include="Models\ClaimDetail.cs" />
+    <Compile Include="Models\ClaimDiagno.cs" />
+    <Compile Include="Models\Classification.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\CompanyPolicy.cs" />
+    <Compile Include="Models\Dependant.cs" />
+    <Compile Include="Models\Diagno.cs" />
+    <Compile Include="Models\EmailAccount.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Enums\Enumerations.cs" />
+    <Compile Include="Models\IDCardData.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\Log.cs" />
+    <Compile Include="Models\Marketer.cs" />
+    <Compile Include="Models\Policy.cs" />
+    <Compile Include="Models\Provider.cs" />
+    <Compile Include="Models\ProviderLevel.cs" />
+    <Compile Include="Models\Rule.cs" />
+    <Compile Include="Models\ServiceResponse.cs" />
+    <Compile Include="Models\Settings.cs" />
+    <Compile Include="Models\Tariff.cs" />
+    <Compile Include="Models\TariffDetail.cs" />
+    <Compile Include="ViewModel\DependantViewModel.cs" />
+    <Compile Include="ViewModel\EmployeeViewModel.cs" />
+    <Compile Include="ViewModel\ListViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Legacy\" />
+  </ItemGroup>
+
+</Project>

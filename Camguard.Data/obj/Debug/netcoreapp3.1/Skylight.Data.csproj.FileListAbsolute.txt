@@ -1,0 +1,9 @@
+C:\Users\Kingsley Samuel\Documents\Projects\SkylightApi\Camguard.Data\bin\Debug\netcoreapp3.1\Skylight.Data.deps.json
+C:\Users\Kingsley Samuel\Documents\Projects\SkylightApi\Camguard.Data\bin\Debug\netcoreapp3.1\Skylight.Data.dll
+C:\Users\Kingsley Samuel\Documents\Projects\SkylightApi\Camguard.Data\bin\Debug\netcoreapp3.1\Skylight.Data.pdb
+C:\Users\Kingsley Samuel\Documents\Projects\SkylightApi\Camguard.Data\obj\Debug\netcoreapp3.1\Skylight.Data.AssemblyInfoInputs.cache
+C:\Users\Kingsley Samuel\Documents\Projects\SkylightApi\Camguard.Data\obj\Debug\netcoreapp3.1\Skylight.Data.AssemblyInfo.cs
+C:\Users\Kingsley Samuel\Documents\Projects\SkylightApi\Camguard.Data\obj\Debug\netcoreapp3.1\Skylight.Data.csproj.CoreCompileInputs.cache
+C:\Users\Kingsley Samuel\Documents\Projects\SkylightApi\Camguard.Data\obj\Debug\netcoreapp3.1\Skylight.Data.dll
+C:\Users\Kingsley Samuel\Documents\Projects\SkylightApi\Camguard.Data\obj\Debug\netcoreapp3.1\Skylight.Data.pdb
+C:\Users\Kingsley Samuel\Documents\Projects\SkylightApi\Camguard.Data\obj\Debug\netcoreapp3.1\Skylight.Data.csprojAssemblyReference.cache

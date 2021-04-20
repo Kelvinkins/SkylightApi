@@ -1,0 +1,14 @@
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\bin\Release\netcoreapp3.1\Camguard.Business.deps.json
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\bin\Release\netcoreapp3.1\Camguard.Business.dll
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\bin\Release\netcoreapp3.1\Camguard.Business.pdb
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\bin\Release\netcoreapp3.1\Camguard.Data.dll
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\bin\Release\netcoreapp3.1\Camguard.Data.pdb
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\obj\Release\netcoreapp3.1\Camguard.Business.csprojAssemblyReference.cache
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\obj\Release\netcoreapp3.1\Camguard.Business.AssemblyInfoInputs.cache
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\obj\Release\netcoreapp3.1\Camguard.Business.AssemblyInfo.cs
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\obj\Release\netcoreapp3.1\Camguard.Business.csproj.CoreCompileInputs.cache
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\obj\Release\netcoreapp3.1\Camguard.Business.csproj.CopyComplete
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\obj\Release\netcoreapp3.1\Camguard.Business.dll
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\obj\Release\netcoreapp3.1\Camguard.Business.pdb
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\bin\Release\netcoreapp3.1\Camguard.Externals.dll
+C:\Users\Kingsley Samuel\Documents\Projects\CamguardNew\CamguardSuite\Camguard.Business\bin\Release\netcoreapp3.1\Camguard.Externals.pdb
