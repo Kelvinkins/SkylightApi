@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "880DU9uxKVBl6hgS0gxVLWDWZpaPr8tgp8cgBVaOlHb5rTwD4LoMmnI8O7wmgNaTJENhYTrXVb5LPtNj1RErRw==",
+  "dgSpecHash": "7EVG+bbHB3438H54IDN2hGP38R5b3O+QDKyovzjDhgVvHjhH5jP8u/1qN24C7cmpOvzKqhv+jVZ0dsqWdftCLg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kingsley Samuel\\Documents\\Projects\\SkylightApi\\Camguard.Authentication\\Camguard.Authentication.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\microsoft.win32.registry.accesscontrol\\5.0.0\\microsoft.win32.registry.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\microsoft.windows.compatibility\\5.0.2\\microsoft.windows.compatibility.5.0.2.nupkg.sha512",
+    "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\mongodb.bson\\2.12.4\\mongodb.bson.2.12.4.nupkg.sha512",
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\5.0.0-rtm.20519.4\\runtime.linux-arm.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\5.0.0-rtm.20519.4\\runtime.linux-arm64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
@@ -75,7 +76,7 @@
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\system.io.pipes.accesscontrol\\5.0.0\\system.io.pipes.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\system.io.ports\\5.0.0\\system.io.ports.5.0.0.nupkg.sha512",
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\system.management\\5.0.0\\system.management.5.0.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\system.private.servicemodel\\4.8.0\\system.private.servicemodel.4.8.0.nupkg.sha512",
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\system.reflection.context\\5.0.0\\system.reflection.context.5.0.0.nupkg.sha512",
     "C:\\Users\\Kingsley Samuel\\.nuget\\packages\\system.reflection.dispatchproxy\\4.7.1\\system.reflection.dispatchproxy.4.7.1.nupkg.sha512",

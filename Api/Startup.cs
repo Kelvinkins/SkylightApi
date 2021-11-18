@@ -28,6 +28,9 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Skylight.Data;
 using Skylight.DAL;
+using Skylight.Data.Models;
+using Microsoft.Extensions.Options;
+using Api.Service;
 
 namespace Api
 {
@@ -43,7 +46,15 @@ namespace Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-             string connectionString = Configuration.GetConnectionString("CamguardPassportConnectionString");
+            services.Configure<HmoDatabaseSettings>(
+            Configuration.GetSection(nameof(HmoDatabaseSettings)));
+
+            services.AddSingleton<IHmoDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<HmoDatabaseSettings>>().Value);
+            services.AddSingleton<EmployeeService>();
+
+
+            string connectionString = Configuration.GetConnectionString("CamguardPassportConnectionString");
                 //@"Data Source=LAURINX-02\LAURINXPRESS;Initial Catalog=CamguardIdentity;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
 

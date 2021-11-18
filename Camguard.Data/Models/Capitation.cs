@@ -27,7 +27,7 @@ namespace Skylight.Models {
         public Provider Provider { get; set; }
         public decimal Amount { get; set; }
         public String PolicyID { get; set; }
-        public Policy Policy { get; set; }
+        public Plan Policy { get; set; }
 
         public int CompanyID { get; set; }
         public Company Company { get; set; }

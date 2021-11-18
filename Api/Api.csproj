@@ -40,6 +40,7 @@
     <Compile Include="Controllers\ProvidersController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Service\EmployeeService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +84,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.3" />
     <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="5.0.4" />
+    <PackageReference Include="MongoDB.Driver" Version="2.12.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.7" />
     <PackageReference Include="System.ServiceModel.Http" Version="4.8.1" />
     <PackageReference Include="System.ServiceModel.Primitives" Version="4.8.1" />

@@ -22,20 +22,20 @@ namespace Camguard.Business.Service
             _unitOfWork = unitOfWork;
         }
 
-        public List<Policy> GetAll()
+        public List<Plan> GetAll()
         {
             var data = _unitOfWork.PolicyRepository.Get().ToList();
             return data;
         }
 
-        public Policy GetByID(string ID)
+        public Plan GetByID(string ID)
         {
             var data = _unitOfWork.PolicyRepository.Get(a => a.PolicyID == ID).FirstOrDefault();
             return data;
         }
 
 
-        public List<Policy> GetBySearchTerm(string keyword)
+        public List<Plan> GetBySearchTerm(string keyword)
         {
             var data = _unitOfWork.PolicyRepository.Get(a => a.PolicyName == keyword || a.Description == keyword).ToList();
             return data;
@@ -63,13 +63,13 @@ namespace Camguard.Business.Service
             return data;
         }
 
-        public List<Policy> Active()
+        public List<Plan> Active()
         {
             var data = _unitOfWork.PolicyRepository.Get(a => a.Discontinued == false).ToList();
             return data;
         }
 
-        public List<Policy> InActive()
+        public List<Plan> InActive()
         {
             var data = _unitOfWork.PolicyRepository.Get(a => a.Discontinued == true).ToList();
             return data;
@@ -77,7 +77,7 @@ namespace Camguard.Business.Service
 
 
 
-        public async Task<(bool status, string message)> Update(Policy model)
+        public async Task<(bool status, string message)> Update(Plan model)
         {
             string message = "";
             try
@@ -96,7 +96,7 @@ namespace Camguard.Business.Service
 
         }
 
-        public async Task<(bool status, string message)> AddAsync(Policy model)
+        public async Task<(bool status, string message)> AddAsync(Plan model)
         {
             string message = "";
             try
@@ -115,7 +115,7 @@ namespace Camguard.Business.Service
 
         }
 
-        public async Task<(bool status, string message)> AddBulkAsync(List<Policy> model)
+        public async Task<(bool status, string message)> AddBulkAsync(List<Plan> model)
         {
             string message = "";
             foreach (var item in model)

@@ -19,7 +19,7 @@ namespace Skylight.Models {
         public string PolicyID { get; set; }
         public RuleLimitType? Limit { get; set; } = RuleLimitType.NoLimit;
         public string LimitValue { get; set; }
-        public Policy Policy { get; set; }
+        public Plan Policy { get; set; }
 
         public int? BenefitCategoryID { get; set; }
         public BenefitCategory BenefitCategory { get; set; }

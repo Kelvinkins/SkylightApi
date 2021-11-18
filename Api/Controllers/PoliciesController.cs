@@ -30,9 +30,9 @@ namespace Api.Controllers
 
         [HttpGet]
         [Route("List")]
-        public IEnumerable<Policy> Get(string keyword, int limit, int offset, Status? status)
+        public IEnumerable<Plan> Get(string keyword, int limit, int offset, Status? status)
         {
-            IEnumerable<Policy> data = new List<Policy>();
+            IEnumerable<Plan> data = new List<Plan>();
             if (!string.IsNullOrEmpty(keyword))
             {
                 data = _policyService.GetBySearchTerm(keyword);
@@ -82,7 +82,7 @@ namespace Api.Controllers
 
         [HttpPut]
         [Route("Update")]
-        public async Task<IActionResult> Update(Policy model)
+        public async Task<IActionResult> Update(Plan model)
         {
             var result = await _policyService.Update(model);
             return Ok(new
@@ -96,7 +96,7 @@ namespace Api.Controllers
 
         [HttpPost]
         [Route("Add")]
-        public async Task<IActionResult> AddAsync(Policy model)
+        public async Task<IActionResult> AddAsync(Plan model)
         {
             var result = await _policyService.AddAsync(model);
             return Ok(new
@@ -110,7 +110,7 @@ namespace Api.Controllers
 
         [HttpPost]
         [Route("AddBulk")]
-        public async Task<IActionResult> AddBulkAsync(List<Policy> model)
+        public async Task<IActionResult> AddBulkAsync(List<Plan> model)
         {
             var result = await _policyService.AddBulkAsync(model);
             return Ok(new

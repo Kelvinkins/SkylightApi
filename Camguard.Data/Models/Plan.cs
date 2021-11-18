@@ -1,10 +1,12 @@
+using Skylight.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 namespace Skylight.Models {
 
-    public class Policy {
+    public class Plan:BaseModel
+    {
         public string PolicyID { get; set; }
         public string PolicyName { get; set; }
         public string Description { get; set; }
@@ -20,5 +22,6 @@ namespace Skylight.Models {
         public int? ProviderLevelID { get; set; }
         public ProviderLevel ProviderLevel { get; set; }
         public bool AllowDependant { get; set; }
+        public DateTime? SystemDateTime { get; set; }
     }
 }

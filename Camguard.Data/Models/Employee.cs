@@ -9,7 +9,8 @@ using Skylight.Models.Enums;
 
 namespace Skylight.Models {
 
-    public class Employee {
+    public class Employee: BaseModel
+    {
         [DatabaseGenerated (DatabaseGeneratedOption.Identity)]
         public int EmployeeID { get; set; }
         public string OldID { get; set; }
@@ -37,7 +38,7 @@ namespace Skylight.Models {
         public Provider Provider { get; set; }
 
         public String PolicyID { get; set; }
-        public Policy Policy { get; set; }
+        public Plan Policy { get; set; }
 
         public int CompanyID { get; set; }
         public Company Company { get; set; }

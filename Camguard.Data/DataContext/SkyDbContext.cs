@@ -23,7 +23,7 @@ namespace Skylight.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Dependant> Dependants { get; set; }
         public DbSet<Provider> Providers { get; set; }
-        public DbSet<Policy> Policies { get; set; }
+        public DbSet<Plan> Policies { get; set; }
         public DbSet<ProviderLevel> ProviderLevels { get; set; }
         public DbSet<Log> Logs { get; set; }
         public DbSet<EmailSetting> EmailSettings { get; set; }

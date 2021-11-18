@@ -9,17 +9,17 @@ namespace Camguard.Business.IContract
 {
     public interface IPolicyService
     {
-        List<Policy> GetAll();
-        List<Policy> Active();
-        List<Policy> InActive();
-        Policy GetByID(string ID);
-        List<Policy> GetBySearchTerm(string keyword);
+        List<Plan> GetAll();
+        List<Plan> Active();
+        List<Plan> InActive();
+        Plan GetByID(string ID);
+        List<Plan> GetBySearchTerm(string keyword);
 
         int GetActiveCount();
         int GetInActiveCount();
         int GetAllCount();
-        Task<(bool status, string message)> Update(Policy model);
-        Task<(bool status, string message)> AddAsync(Policy model);
-        Task<(bool status, string message)> AddBulkAsync(List<Policy> model);
+        Task<(bool status, string message)> Update(Plan model);
+        Task<(bool status, string message)> AddAsync(Plan model);
+        Task<(bool status, string message)> AddBulkAsync(List<Plan> model);
     }
 }

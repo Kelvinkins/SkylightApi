@@ -46,7 +46,7 @@ namespace Skylight.Models {
         public Provider Provider { get; set; }
 
         public String PolicyID { get; set; }
-        public Policy Policy { get; set; }
+        public Plan Policy { get; set; }
         public bool IDCardPrinted { get; set; }
 
         public String StateID { get; set; }

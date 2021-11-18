@@ -1,3 +1,4 @@
+using Skylight.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Skylight.Models
 {
 
-    public class Company
+    public class Company:BaseModel
     {
         [Display(Name = "Client ProviderLevelID")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -37,6 +38,7 @@ namespace Skylight.Models
         public DateTime? SystemDateTime { get; set; }
 
         public string MarketerID { get; set; }
+        public string MarketerID1 { get; set; }
         public Marketer Marketer { get; set; }
     }
 }

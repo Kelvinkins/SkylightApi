@@ -14,7 +14,7 @@ namespace Skylight.Models {
         public DateTime RegistrationDate { get; set; }
         public bool Discontinued { get; set; }
         public int Level{get;set;}
-        public List<Policy> Policies { get; set; }
+        public List<Plan> Policies { get; set; }
         public List<Provider> Providers { get; set; }
     }
 }

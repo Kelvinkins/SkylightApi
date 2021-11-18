@@ -19,7 +19,7 @@ namespace Skylight.DAL
         private SkylightRepository<Dependant> dependantRepository;
         private SkylightRepository<Provider> providerRepository;
         private SkylightRepository<Capitation> capitationRepository;
-        private SkylightRepository<Policy> policyRepository;
+        private SkylightRepository<Plan> policyRepository;
         private SkylightRepository<ProviderLevel> providerLevelRepository;
 
         private SkylightRepository<Log> logRepository;
@@ -332,14 +332,14 @@ namespace Skylight.DAL
                 return providerLevelRepository;
             }
         }
-        public SkylightRepository<Policy> PolicyRepository
+        public SkylightRepository<Plan> PolicyRepository
         {
             get
             {
 
                 if (this.policyRepository == null)
                 {
-                    this.policyRepository = new SkylightRepository<Policy>(context);
+                    this.policyRepository = new SkylightRepository<Plan>(context);
                 }
                 return policyRepository;
             }

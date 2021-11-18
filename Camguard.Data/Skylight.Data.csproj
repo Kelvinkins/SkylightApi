@@ -17,6 +17,7 @@
     <Compile Include="Models\Authorization.cs" />
     <Compile Include="Models\AuthorizationDetail.cs" />
     <Compile Include="Models\AuthorizationDiagno.cs" />
+    <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\BenefitCategory.cs" />
     <Compile Include="Models\BenefitCover.cs" />
     <Compile Include="Models\Capitation.cs" />
@@ -33,11 +34,12 @@
     <Compile Include="Models\EmailAccount.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Enums\Enumerations.cs" />
+    <Compile Include="Models\HmoDatabaseSettings.cs" />
     <Compile Include="Models\IDCardData.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Log.cs" />
     <Compile Include="Models\Marketer.cs" />
-    <Compile Include="Models\Policy.cs" />
+    <Compile Include="Models\Plan.cs" />
     <Compile Include="Models\Provider.cs" />
     <Compile Include="Models\ProviderLevel.cs" />
     <Compile Include="Models\Rule.cs" />
@@ -55,6 +57,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.3" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="MongoDB.Bson" Version="2.12.4" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>

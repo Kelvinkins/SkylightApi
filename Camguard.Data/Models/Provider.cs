@@ -10,7 +10,7 @@ using Skylight.Data.Models;
 namespace Skylight.Models
 {
 
-    public class Provider
+    public class Provider:BaseModel
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProviderID { get; set; }

@@ -28,7 +28,7 @@ namespace Api.Controllers
 
 
 
-        [HttpPut]
+        [HttpPost]
         [Route("Process")]
         public async Task<IActionResult> Process(CapitationMaster model)
         {
